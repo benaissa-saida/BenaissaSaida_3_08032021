@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style.css">
     <title>Ohmyfood</title>
 </head>
-<body>
+<body class="body__menu">
     <div class="bloc-page">
         <header class="header">
         <div class="header__logo">
@@ -29,94 +29,93 @@
         </div>
     </header>
 
-    <main>
-        <div class="menu-img">
-            <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"/> 
-        </div>
-       <section>
-           <h1>Le délice des sens <i class="far fa-heart"></i></h1>
-           <article>
-                <h3>Entrées</h3>
-                <div>
-                    <p><strong>Tartare de thon</strong></p>
-                    <p>Assaisonné au yuzu</p>
+    <main class="container-menu">
+        <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="container-menu__img"/> 
+       <section class="container-menu__card">
+           <h1 class="container-menu__heading">Le délice des sens <i class="container-menu__icone far fa-heart"></i></h1>
+           <article class="article">
+               <h3 class="article__heading"><span class="article__heading--underline">ENTR</span>ÉES</h3>
+               <div class="article__dishes article__starter">
+                    <h3>Tartare de thon</h3>
+                    <span class="article__dishes--bottom"><p>Assaisonné au yuzu</p></span>
                     <label for="price">
                         25€
                         <input id="price" type="checkbox">
                     </label>
-                </div>
-                <div>
-                    <p><strong>Bouchée de homard croustillant</strong></p>
-                    <p>Et sa farandole de petits légumes</p>
+               </div>
+                <div class="article__dishes article__starter">
+                    
+                    <h3>Bouchée de homard croustillant</h3>
+                    <span class="article__dishes--bottom"><p>Et sa farandole de petits légumes</p></span>
                     <label for="price">
                         35€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Velouté de cèpes</strong></p>
-                    <p>Aux truffes</p>
+                <div class="article__dishes article__starter">
+                    <h3>Velouté de cèpes</h3>
+                    <span class="article__dishes--bottom"><p>Aux truffes</p></span>
                     <label for="price">
                         20€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-            </article>
-            <article>
-                <h3>Plats</h3>
-                <div>
-                    <p><strong>Poulet rôti aux herbes de Provence</strong></p>
-                    <p>Et sa crème de truffe</p>
+           </article>
+           <article>
+                <h3 class="article__heading"><span class="article__heading--underline">PLAT</span>S</h3>
+                <div class="article__dishes article__main-course">
+                    <h3>Poulet rôti aux herbes de Provence</h3>
+                    <span class="article__dishes--bottom"><p>Et sa crème de truffe</p></span>
                     <label for="price">
                         40€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Langouste rôtie</strong></p>
-                    <p>Et ses légumes de saison</p>
+                <div class="article__dishes article__main-course">
+                    <h3>Langouste rôtie</h3>
+                    <span class="article__dishes--bottom"><p>Et ses légumes de saison</p></span>
                     <label for="price">
                         35€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Côte de boeuf Angus</strong></p>
-                    <p>Et sa puréee de panais</p>
+                <div class="article__dishes article__main-course">
+                    <h3>Côte de boeuf Angus</h3>
+                    <span class="article__dishes--bottom"><p>Et sa purée de panais</p></span>
                     <label for="price">
                         44€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-            </article>
-            <article>
-                <h3>Desserts</h3>
-                <div>
-                    <p><strong>Farandole de desserts</strong></p>
-                    <p>Du chef</p>
+           </article>
+           <article>
+                <h3 class="article__heading"><span class="article__heading--underline">DESS</span>ERTS</h3>
+                <div class="article__dishes article__desserts">
+                    <h3>Farandole de desserts</h3>
+                    <span class="article__dishes--bottom"><p>Du chef</p></span>
                     <label for="price">
                         18€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Crème brulée</strong></p>
-                    <p>Revisitée</p>
+                <div class="article__dishes article__desserts">
+                    <h3>Crème brulée</h3>
+                    <span class="article__dishes--bottom"><p>Revisitée</p></span>
                     <label for="price">
                         22€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Tiramisu</strong></p>
-                    <p>À la noisette</p>
+                <div class="article__dishes article__desserts">
+                    <h3>Tiramisu</h3>
+                    <span class="article__dishes--bottom"><p>À la noisette</p></span>
                     <label for="price">
                         23€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-            </article>
-            <button class="button">Commander</button>
+           </article>
+           <button class="button container-menu__button">Commander</button>
        </section>
     </main>
 

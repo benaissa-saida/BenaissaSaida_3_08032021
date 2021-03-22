@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style.css">
     <title>Ohmyfood</title>
 </head>
-<body>
+<body class="body__menu">
     <div class="bloc-page">
         <header class="header">
         <div class="header__logo">
@@ -29,96 +29,96 @@
         </div>
     </header>
 
-    <main>
-        <div class="menu-img">
-            <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"/> 
-        </div>
-       <section>
-           <h1>À la française <i class="far fa-heart"></i></h1>
-           <article>
-                <h3>Entrées</h3>
-                <div>
-                    <p><strong>Tartare de poulpe acidulé</strong></p>
-                    <p>Aux zestes d'orange</p>
+    <main class="container-menu">
+        <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="container-menu__img"/> 
+       <section class="container-menu__card">
+           <h1 class="container-menu__heading">À la française<i class="container-menu__icone far fa-heart"></i></h1>
+           <article class="article">
+               <h3 class="article__heading"><span class="article__heading--underline">ENTR</span>ÉES</h3>
+               <div class="article__dishes article__starter">
+                    <h3>Tartare de poulpe acidulé</h3>
+                    <span class="article__dishes--bottom"><p>Aux zestes d'orange</p></span>
                     <label for="price">
                         25€
                         <input id="price" type="checkbox">
                     </label>
-                </div>
-                <div>
-                    <p><strong>Velouté de légumes d'antan</strong></p>
-                    <p>Carotte, panais, topinambour</p>
+               </div>
+                <div class="article__dishes article__starter">
+                    
+                    <h3>Velouté de légumes d'antan</h3>
+                    <span class="article__dishes--bottom"><p>Carotte, panais, topinambour</p></span>
                     <label for="price">
                         35€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Soupe à l'oignon</strong></p>
-                    <p>Revisitée</p>
+                <div class="article__dishes article__starter">
+                    <h3>Soupe à l'oignon</h3>
+                    <span class="article__dishes--bottom"><p>Revisitée</p></span>
                     <label for="price">
                         20€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-            </article>
-            <article>
-                <h3>Plats</h3>
-                <div>
-                    <p><strong>Coquilles Saint-Jacques</strong></p>
-                    <p>Accompagnées d'une purée de panais</p>
+           </article>
+           <article>
+                <h3 class="article__heading"><span class="article__heading--underline">PLAT</span>S</h3>
+                <div class="article__dishes article__main-course">
+                    <h3>Coquilles Saint-Jacques</h3>
+                    <span class="article__dishes--bottom"><p>Accompagnées d'une purée de panais</p></span>
                     <label for="price">
                         40€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Magret de canard</strong></p>
-                    <p>Et parmentier de pomme de terre</p>
+                <div class="article__dishes article__main-course">
+                    <h3>Magret de canard</h3>
+                    <span class="article__dishes--bottom"><p>Et parmentier de pomme de terre</p></span>
                     <label for="price">
                         35€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Pigeonneau d'Ille-et-Vilaine</strong></p>
-                    <p>Sur son lit de gnocchis aux légumes</p>
+                <div class="article__dishes article__main-course">
+                    <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                    <span class="article__dishes--bottom"><p>Sur son lit de gnocchis aux légumes</p></span>
                     <label for="price">
                         44€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-            </article>
-            <article>
-                <h3>Desserts</h3>
-                <div>
-                    <p><strong>Pétales de violettes glacés</strong></p>
-                    <p>Et purée de noisettes</p>
+           </article>
+           <article>
+                <h3 class="article__heading"><span class="article__heading--underline">DESS</span>ERTS</h3>
+                <div class="article__dishes article__desserts">
+                    <h3>Pétales de violettes glacés</h3>
+                    <span class="article__dishes--bottom"><p>Et sa purée de noisettes</p></span>
                     <label for="price">
                         18€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Fondant au chocolat</strong></p>
-                    <p>Revisité</p>
+                <div class="article__dishes article__desserts">
+                    <h3>Fondant au chocolat</h3>
+                    <span class="article__dishes--bottom"><p>Revisité</p></span>
                     <label for="price">
                         22€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-                <div>
-                    <p><strong>Millefeuille croustillant</strong></p>
-                    <p>Myrtilles et pâte d'amande</p>
+                <div class="article__dishes article__desserts">
+                    <h3>Mille-feuille croustillant</h3>
+                    <span class="article__dishes--bottom"><p>Myrtilles et pâte d'amande</p></span>
                     <label for="price">
                         23€
                         <input id="price" type="checkbox">
                     </label>
                 </div>
-            </article>
-            <button class="button">Commander</button>
+           </article>
+           <button class="button container-menu__button">Commander</button>
        </section>
     </main>
+
 
     <footer class="footer">
         <h3 class="footer__heading">ohmyfood</h3>
