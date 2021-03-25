@@ -33,15 +33,21 @@
   cursor: pointer;
   color: #FFF;
   border-radius: 25px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   border: transparent;
   background-size: 200%;
   background-image: linear-gradient(#FF79DA, #9356DC);
   font-size: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.button:hover {
+  opacity: 0.9;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .btn {
   margin: 10px 0;
-  width: 80vw;
+  width: 90vw;
   min-width: 330px;
   padding: 30px 4rem 30px 0;
   border: transparent;
@@ -208,18 +214,81 @@
 .card__caption {
   padding-left: 15px;
 }
-.card__caption i {
+.card__heading {
+  margin-bottom: 0;
+}
+.card__byline {
+  margin-top: 5px;
+}
+.card__icone {
   align-self: flex-end;
   position: absolute;
   bottom: 30px;
   right: 16px;
   font-size: 21px;
 }
-.card__heading {
-  margin-bottom: 0;
+.card__icone:active > .fa-heart, .card__icone:hover > .fa-heart {
+  font-weight: 400;
+  -webkit-clip-path: circle(100% at 20% 0%);
+  animation: filling 1s ease-in-out 50ms both;
+  cursor: pointer;
 }
-.card__byline {
-  margin-top: 5px;
+@keyframes filling {
+  0% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(10% at 40% 100%);
+  }
+  10% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(25% at 40% 100%);
+  }
+  30% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(40% at 40% 100%);
+  }
+  50% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(60% at 40% 100%);
+  }
+  70% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(65% at 40% 100%);
+  }
+  90% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(75%);
+  }
+  100% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 /*page des menus*/
@@ -229,6 +298,7 @@
   width: 100vw;
   min-width: 377px;
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 .container-menu__img {
   width: 100vw;
@@ -254,6 +324,70 @@
 .container-menu__button {
   width: 150px;
   align-self: center;
+  animation: 1s ease-in-out 3s both fadein;
+}
+.container-menu__icone:hover > .fa-heart {
+  font-weight: 400;
+  -webkit-clip-path: circle(100% at 40% 90%);
+  animation: filling-menu 1s ease-in-out 50ms both;
+  cursor: pointer;
+}
+@keyframes filling-menu {
+  0% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(30% at 40% 100%);
+  }
+  10% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(45% at 40% 100%);
+  }
+  30% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(50% at 40% 100%);
+  }
+  50% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(65% at 40% 100%);
+  }
+  70% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(70% at 40% 100%);
+  }
+  90% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(75%);
+  }
+  100% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 .article__heading {
@@ -286,6 +420,34 @@
   grid-row-start: 2;
   font-weight: 500;
   font-size: 15px;
+  cursor: pointer;
+  position: relative;
 }
+.article__dishes input {
+  position: absolute;
+  right: 9999px;
+}
+
+.article__starter {
+  animation: 2s ease-in-out fadein;
+}
+
+.article__main-course {
+  animation: 1s ease-in-out 1s both fadein;
+}
+
+.article__desserts {
+  animation: 1s ease-in-out 2s both fadein;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*ICONE*/
 
 /*# sourceMappingURL=style.css.map */
