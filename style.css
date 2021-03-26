@@ -228,66 +228,25 @@
   font-size: 21px;
 }
 .card__icone:active > .fa-heart, .card__icone:hover > .fa-heart {
-  font-weight: 400;
-  -webkit-clip-path: circle(100% at 20% 0%);
   animation: filling 1s ease-in-out 50ms both;
   cursor: pointer;
 }
 @keyframes filling {
   0% {
     font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-clip-path: circle(10% at 40% 100%);
   }
-  10% {
+  100% {
     font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(25% at 40% 100%);
-  }
-  30% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(40% at 40% 100%);
-  }
-  50% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(60% at 40% 100%);
-  }
-  70% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(65% at 40% 100%);
-  }
-  90% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     -webkit-clip-path: circle(75%);
-  }
-  100% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
   }
 }
 
@@ -319,75 +278,13 @@
   justify-content: space-around;
   display: inline-flex;
   font-size: 1.6rem;
+  align-items: center;
   font-weight: 100;
 }
 .container-menu__button {
   width: 150px;
   align-self: center;
   animation: 1s ease-in-out 3s both fadein;
-}
-.container-menu__icone:hover > .fa-heart {
-  font-weight: 400;
-  -webkit-clip-path: circle(100% at 40% 90%);
-  animation: filling-menu 1s ease-in-out 50ms both;
-  cursor: pointer;
-}
-@keyframes filling-menu {
-  0% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(30% at 40% 100%);
-  }
-  10% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(45% at 40% 100%);
-  }
-  30% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(50% at 40% 100%);
-  }
-  50% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(65% at 40% 100%);
-  }
-  70% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(70% at 40% 100%);
-  }
-  90% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-clip-path: circle(75%);
-  }
-  100% {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
 }
 
 .article__heading {
@@ -415,7 +312,7 @@
   padding-top: 5px;
   font-weight: 100;
 }
-.article__dishes label {
+.article__dishes__price {
   grid-column-start: 2;
   grid-row-start: 2;
   font-weight: 500;
@@ -423,7 +320,7 @@
   cursor: pointer;
   position: relative;
 }
-.article__dishes input {
+.article__dishes__price--icone {
   position: absolute;
   right: 9999px;
 }
@@ -448,6 +345,43 @@
     opacity: 1;
   }
 }
-/*ICONE*/
+/*animation*/
+#heartfill {
+  display: none;
+}
+
+.container-menu__icone:hover > .fa-heart {
+  animation: filling-menu 400ms ease-in-out 500ms forwards;
+  cursor: pointer;
+}
+@keyframes filling-menu {
+  0% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(30% at 40% 100%);
+  }
+  100% {
+    font-weight: 900;
+    background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-clip-path: circle(75%);
+  }
+}
+
+#heartfill:checked ~ * .container-menu__icone > .fa-heart,
+#heartfill:checked ~ * .card__icone > .fa-heart {
+  display: inline-block;
+  font-weight: 900;
+  background: -webkit-linear-gradient(0deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 1;
+}
 
 /*# sourceMappingURL=style.css.map */

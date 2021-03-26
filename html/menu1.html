@@ -30,7 +30,8 @@
     <main class="container-menu">
         <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="container-menu__img"/> 
        <section class="container-menu__card">
-           <h1 class="container-menu__heading">La palette du goût <span class="container-menu__icone"><i class="far fa-heart"></i></span></h1>
+            <input type="checkbox" id="heartfill"/>
+            <h1 class="container-menu__heading">La palette du goût <label for="heartfill" class="container-menu__icone"><i class="far fa-heart"></i></label></h1>
            <article class="article article__starter">
                <h3 class="article__heading"><span class="article__heading--underline">ENTR</span>ÉES</h3>
                <div class="article__dishes">
@@ -72,10 +73,10 @@
                 <div class="article__dishes ">
                     <h3>Parmentier de queue de boeuf</h3>
                     <span class="article__dishes--bottom"><p>À la truffe noire sur sa purée de panais</p></span>
-                    <label for="price">
-                        35€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__price">
+                        <p>35€</p>
+                        <span class="article__price--icone"><i class="fas fa-check-circle"></i></span>
+                    </div>
                 </div>
                 <div class="article__dishes ">
                     <h3>Filet de turbot</h3>
@@ -88,7 +89,7 @@
            </article>
            <article class="article article__desserts">
                 <h3 class="article__heading"><span class="article__heading--underline">DESS</span>ERTS</h3>
-                <div class="article__dishes ">
+                <div class="article__dishes">
                     <h3>Paris-Brest</h3>
                     <span class="article__dishes--bottom"><p>Revisité</p></span>
                     <label for="price">
@@ -123,7 +124,7 @@
         <p class="footer__byline"><i class="fas fa-hands-helping footer__icone"></i>Devenir partenaire</p>
         <p class="footer__byline">Mentions légales</p>
         <address class="footer__contact">
-            <a href="mailto:">Contact</a>
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
         </address>
     </footer>
 </body>
