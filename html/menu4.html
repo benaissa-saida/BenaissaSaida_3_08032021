@@ -32,87 +32,88 @@
     <main class="container-menu">
         <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="container-menu__img"/> 
        <section class="container-menu__card">
-           <h1 class="container-menu__heading">Le délice des sens <span class="container-menu__icone"><i class="container-menu__icone far fa-heart"></i></span></h1>
-           <article class="article">
-               <h3 class="article__heading"><span class="article__heading--underline">ENTR</span>ÉES</h3>
-               <div class="article__dishes article__starter">
+        <input type="checkbox" id="heartfill"/>
+        <h1 class="container-menu__heading">Le délice des sens<label for="heartfill" class="container-menu__icone"><i class="far fa-heart"></i></label></h1>
+           <article class="article article__starter">
+               <h2 class="article__heading"><span class="article__heading--underline">ENTR</span>ÉES</h3>
+               <div class="article__dishes">
                     <h3>Tartare de thon</h3>
                     <span class="article__dishes--bottom"><p>Assaisonné au yuzu</p></span>
-                    <label for="price">
-                        25€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>25€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                </div>
-                <div class="article__dishes article__starter">
+                <div class="article__dishes">
                     
-                    <h3>Bouchée de homard croustillant</h3>
-                    <span class="article__dishes--bottom"><p>Et sa farandole de petits légumes</p></span>
-                    <label for="price">
-                        35€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <h3 class="article__dishes--ellipsis">Bouchée de homard croustillant</h3>
+                    <span class="article__dishes--bottom"><p class="article__dishes--ellipsis">Et sa farandole de petits légumes</p></span>
+                    <div class="article__dishes--slide-in">
+                        <p>35€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
-                <div class="article__dishes article__starter">
+                <div class="article__dishes">
                     <h3>Velouté de cèpes</h3>
                     <span class="article__dishes--bottom"><p>Aux truffes</p></span>
-                    <label for="price">
-                        20€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>20€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
            </article>
-           <article>
-                <h3 class="article__heading"><span class="article__heading--underline">PLAT</span>S</h3>
-                <div class="article__dishes article__main-course">
-                    <h3>Poulet rôti aux herbes de Provence</h3>
+           <article class="article article__main-course">
+                <h2 class="article__heading"><span class="article__heading--underline">PLAT</span>S</h3>
+                <div class="article__dishes">
+                    <h3 class="article__dishes--ellipsis">Poulet rôti aux herbes de Provence</h3>
                     <span class="article__dishes--bottom"><p>Et sa crème de truffe</p></span>
-                    <label for="price">
-                        40€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>40€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
-                <div class="article__dishes article__main-course">
+                <div class="article__dishes">
                     <h3>Langouste rôtie</h3>
                     <span class="article__dishes--bottom"><p>Et ses légumes de saison</p></span>
-                    <label for="price">
-                        35€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>35€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
-                <div class="article__dishes article__main-course">
+                <div class="article__dishes">
                     <h3>Côte de boeuf Angus</h3>
                     <span class="article__dishes--bottom"><p>Et sa purée de panais</p></span>
-                    <label for="price">
-                        44€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>44€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div>
                 </div>
            </article>
-           <article>
-                <h3 class="article__heading"><span class="article__heading--underline">DESS</span>ERTS</h3>
-                <div class="article__dishes article__desserts">
+           <article class="article article__desserts">
+                <h2 class="article__heading"><span class="article__heading--underline">DESS</span>ERTS</h3>
+                <div class="article__dishes">
                     <h3>Farandole de desserts</h3>
                     <span class="article__dishes--bottom"><p>Du chef</p></span>
-                    <label for="price">
-                        18€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>18€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
-                <div class="article__dishes article__desserts">
+                <div class="article__dishes">
                     <h3>Crème brulée</h3>
                     <span class="article__dishes--bottom"><p>Revisitée</p></span>
-                    <label for="price">
-                        22€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>22€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
-                <div class="article__dishes article__desserts">
+                <div class="article__dishes">
                     <h3>Tiramisu</h3>
                     <span class="article__dishes--bottom"><p>À la noisette</p></span>
-                    <label for="price">
-                        23€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>23€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
            </article>
            <button class="button container-menu__button">Commander</button>
@@ -125,7 +126,7 @@
         <p class="footer__byline"><i class="fas fa-hands-helping footer__icone"></i>Devenir partenaire</p>
         <p class="footer__byline">Mentions légales</p>
         <address class="footer__contact">
-            <a href="mailto:">Contact</a>
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
         </address>
     </footer>
 </body>

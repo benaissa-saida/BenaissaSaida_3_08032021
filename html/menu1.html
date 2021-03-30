@@ -10,6 +10,7 @@
     <title>Ohmyfood</title>
 </head>
 <body class="body__menu">
+    <div class="loading-spinner"></div>
     <div class="bloc-page">
         <header class="header">
         <a href="../index.html" class="header__return"><i class="fas fa-arrow-left"></i></a>
@@ -33,85 +34,85 @@
             <input type="checkbox" id="heartfill"/>
             <h1 class="container-menu__heading">La palette du goût <label for="heartfill" class="container-menu__icone"><i class="far fa-heart"></i></label></h1>
            <article class="article article__starter">
-               <h3 class="article__heading"><span class="article__heading--underline">ENTR</span>ÉES</h3>
+               <h2 class="article__heading"><span class="article__heading--underline">ENTR</span>ÉES</h3>
                <div class="article__dishes">
                     <h3>Fricassée d'escargot</h3>
-                    <span class="article__dishes--bottom"><p>Au piment d'Espelette</p></span>
-                    <label for="price">
-                        25€
-                        <input id="price" type="checkbox">
-                    </label>
-               </div>
+                    <span class="article__dishes--bottom"><p>Au piment d'Espelette</p></span>         
+                    <div class="article__dishes--slide-in">
+                        <p>25€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
+                </div>
+                
                 <div class="article__dishes ">
-                    
                     <h3>Foie gras de canard mi-cuit</h3>
                     <span class="article__dishes--bottom"><p>Et ses copeaux de truffe noire</p></span>
-                    <label for="price">
-                        35€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>35€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
                 <div class="article__dishes ">
                     <h3>Oeuf au plat</h3>
-                    <span class="article__dishes--bottom"><p>Assaisonné à la truffe sur lit de caviar</p></span>
-                    <label for="price">
-                        20€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <span class="article__dishes--bottom"><p class="article__dishes--ellipsis">Assaisonné à la truffe sur lit de caviar</p></span>
+                    <div class="article__dishes--slide-in">
+                        <p>20€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
            </article>
            <article class="article article__main-course">
-                <h3 class="article__heading"><span class="article__heading--underline">PLAT</span>S</h3>
+                <h2 class="article__heading"><span class="article__heading--underline">PLAT</span>S</h3>
                 <div class="article__dishes ">
                     <h3>Filet de boeuf aux herbes</h3>
-                    <span class="article__dishes--bottom"><p>Accompagné de sa ribambelle de légumes</p></span>
-                    <label for="price">
-                        40€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <span class="article__dishes--bottom"><p class="article__dishes--ellipsis">Accompagné de sa ribambelle de légumes</p></span>
+                    <div class="article__dishes--slide-in">
+                        <p>40€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
                 <div class="article__dishes ">
-                    <h3>Parmentier de queue de boeuf</h3>
-                    <span class="article__dishes--bottom"><p>À la truffe noire sur sa purée de panais</p></span>
-                    <div class="article__price">
+                    <h3 class="article__dishes--ellipsis">Parmentier de queue de boeuf</h3>
+                    <span class="article__dishes--bottom"><p class="article__dishes--ellipsis">À la truffe noire sur sa purée de panais</p></span> 
+                    <div class="article__dishes--slide-in">
                         <p>35€</p>
-                        <span class="article__price--icone"><i class="fas fa-check-circle"></i></span>
-                    </div>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
                 <div class="article__dishes ">
                     <h3>Filet de turbot</h3>
                     <span class="article__dishes--bottom"><p>Aux agrumes</p></span>
-                    <label for="price">
-                        44€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>44€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
            </article>
            <article class="article article__desserts">
-                <h3 class="article__heading"><span class="article__heading--underline">DESS</span>ERTS</h3>
+                <h2 class="article__heading"><span class="article__heading--underline">DESS</span>ERTS</h3>
                 <div class="article__dishes">
                     <h3>Paris-Brest</h3>
                     <span class="article__dishes--bottom"><p>Revisité</p></span>
-                    <label for="price">
-                        18€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <div class="article__dishes--slide-in">
+                        <p>18€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
                 <div class="article__dishes ">
-                    <h3>Macaron au chocolat d'exception</h3>
-                    <span class="article__dishes--bottom"><p>Et glace à la vanille de Madagascar</p></span>
-                    <label for="price">
-                        22€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <h3 class="article__dishes--ellipsis">Macaron au chocolat d'exception</h3>
+                    <span class="article__dishes--bottom"><p class="article__dishes--ellipsis">Et glace à la vanille de Madagascar</p></span>
+                    <div class="article__dishes--slide-in">
+                        <p>22€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div> 
                 </div>
                 <div class="article__dishes ">
                     <h3>Mousse au chocolat</h3>
-                    <span class="article__dishes--bottom"><p>Au piment d'Espelette et à la truffe noire</p></span>
-                    <label for="price">
-                        23€
-                        <input id="price" type="checkbox">
-                    </label>
+                    <span class="article__dishes--bottom"><p class="article__dishes--ellipsis">Au piment d'Espelette et à la truffe noire</p></span>
+                    <div class="article__dishes--slide-in">
+                        <p>23€</p>
+                        <span id="check"><i class="fas fa-check-circle"></i></span>
+                    </div>
                 </div>
            </article>
            <button class="button container-menu__button">Commander</button>
