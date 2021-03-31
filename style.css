@@ -187,6 +187,14 @@
   bottom: 2.4rem;
   left: -2.1rem;
 }
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+  .menu__heading {
+    margin-left: 2.1rem;
+  }
+  .menu__list {
+    padding-left: 30px;
+  }
+}
 
 .card {
   width: 90vw;
@@ -256,6 +264,15 @@
     -webkit-clip-path: circle(75%);
   }
 }
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+  .card {
+    margin: 0 auto 15px;
+  }
+  .card__img {
+    height: 200px;
+    object-position: center;
+  }
+}
 
 /*page des menus*/
 .container-menu {
@@ -292,7 +309,6 @@
   align-self: center;
   animation: 1s ease-in-out 3s both fadein;
 }
-
 .article__heading {
   font-weight: 100;
   margin-left: 13px;
@@ -351,21 +367,16 @@
 }
 .article__dishes--slide-in #check {
   background: #99E2D0;
-  position: absolute;
-  top: 0;
-  right: -4.5rem;
+  transform: translateX(20px);
+  width: 70%;
   display: inline-flex;
   align-items: center;
-  width: 100%;
+  justify-content: center;
   height: 64px;
-  padding-left: 1.5rem;
 }
 .article__dishes--slide-in #check > .fa-check-circle {
   font-size: 23px;
   color: #FFF;
-}
-.article__dishes:active {
-  text-overflow: ellipsis;
 }
 .article__dishes:active .article__dishes--slide-in {
   width: 32%;
@@ -376,6 +387,25 @@
 }
 .article__dishes:active #check > .fa-check-circle {
   animation: spin 0.5s linear forwards;
+}
+@media only screen and (min-width: 480px) and (max-width: 780px) {
+  .article {
+    width: 95%;
+    align-self: center;
+  }
+  .article__dishes--slide-in {
+    width: 10%;
+  }
+  .article #check {
+    transform: translate(46px);
+    width: 80%;
+  }
+  .article__dishes:active.article__dishes--slide-in {
+    width: 25%;
+  }
+  .article__dishes:active #check {
+    transform: translateX(20px);
+  }
 }
 
 @keyframes spin {
