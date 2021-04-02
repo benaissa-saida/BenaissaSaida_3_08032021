@@ -444,7 +444,6 @@
 @media (min-width: 781px) and (max-width: 1023px) {
   .card {
     width: 94%;
-    max-width: 450px;
     min-width: unset;
     margin: 0 5px 10px 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
@@ -457,7 +456,6 @@
 @media (min-width: 1024px) {
   .card {
     width: 94%;
-    max-width: 450px;
     min-width: unset;
     margin: 0 5px 10px 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
@@ -648,11 +646,14 @@
     width: 5%;
   }
   .article #check {
-    transform: translateX(30px);
-    width: 75%;
+    transform: translateX(63px);
+    width: 85%;
   }
   .article__dishes:hover .article__dishes--slide-in {
     width: 20%;
+  }
+  .article__dishes:hover #check {
+    transform: translate(35px);
   }
   .article__dishes:hover #check > .fa-check-circle {
     animation: spin 0.5s linear forwards;
