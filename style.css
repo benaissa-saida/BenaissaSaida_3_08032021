@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  min-width: 325px;
+  min-width: 320px;
   z-index: 2;
 }
 
@@ -151,6 +151,12 @@
 }
 .btn:hover:hover i {
   color: #9356DC;
+}
+@media screen and (max-width: 360px) {
+  .btn {
+    min-width: 290px;
+    padding-left: 1rem;
+  }
 }
 @media (min-width: 781px) and (max-width: 1023px) {
   .btn {
@@ -470,13 +476,13 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
-  min-width: 360px;
+  min-width: 320px;
   font-family: "Roboto", sans-serif;
   position: relative;
 }
 .container-menu__img {
   width: 100vw;
-  min-width: 360px;
+  min-width: 320px;
   height: 60vh;
   object-fit: cover;
 }
@@ -536,7 +542,7 @@
 }
 .article__dishes {
   display: grid;
-  grid-template-columns: 1fr 15%;
+  grid-template-columns: 1fr 10%;
   grid-template-rows: repeat(2, 50%);
   margin: 10px;
   padding: 10px;
@@ -604,6 +610,18 @@
 }
 .article__dishes:active #check > .fa-check-circle {
   animation: spin 0.5s linear forwards;
+}
+@media screen and (max-width: 360px) {
+  .article__dishes h3 {
+    font-size: 1rem;
+  }
+  .article #check {
+    transform: translateX(10px);
+    width: 100%;
+  }
+  .article__dishes:active .article__dishes--slide-in {
+    width: 35%;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 780px) {
   .article {
