@@ -75,6 +75,7 @@
     -webkit-background-clip: text;
     color: transparent;
     -webkit-clip-path: circle(10% at 40% 100%);
+    clip-path: circle(10% at 40% 100%);
   }
   100% {
     font-weight: 900;
@@ -84,6 +85,7 @@
     -webkit-background-clip: text;
     color: transparent;
     -webkit-clip-path: circle(75%);
+    clip-path: circle(75%);
   }
 }
 @keyframes filling-menu {
