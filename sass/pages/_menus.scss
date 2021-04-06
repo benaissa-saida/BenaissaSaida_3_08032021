@@ -29,7 +29,7 @@
         animation: 1s ease-in-out 4.9s both fadein;
     }
     &__icone{
-        &:hover{
+        &:active{
              & > .fa-heart{
                 animation: filling-menu 1s ease-in-out 100ms forwards;
                 cursor: pointer;
@@ -45,6 +45,14 @@
     @media (min-width: map-get($breakpoints, desktop)){
         &__heading{
             font-size: 1.8rem;
+        }
+        &__icone{
+            &:hover{
+                 & > .fa-heart{
+                    animation: filling-menu 1s ease-in-out 100ms forwards;
+                    cursor: pointer;
+                } 
+            }  
         }
     }
 }

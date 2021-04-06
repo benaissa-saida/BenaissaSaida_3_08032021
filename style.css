@@ -428,18 +428,6 @@
 .card__byline {
   margin-top: 5px;
 }
-.card__icone {
-  align-self: flex-end;
-  position: absolute;
-  bottom: 30px;
-  right: 16px;
-  font-size: 21px;
-}
-.card__icone:active > .fa-heart, .card__icone:hover > .fa-heart {
-  -webkit-animation: filling 1s ease-in-out 50ms both;
-  animation: filling 1s ease-in-out 50ms both;
-  cursor: pointer;
-}
 @media screen and (min-width: 480px) and (max-width: 780px) {
   .card {
     margin: 0 auto 15px;
@@ -471,6 +459,29 @@
   }
   .card__img {
     width: 100%;
+  }
+}
+
+.container-ah {
+  position: relative;
+}
+.container-ah__icone {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 30px;
+  right: 35px;
+  font-size: 21px;
+}
+.container-ah__icone:active > .fa-heart {
+  -webkit-animation: filling 1s ease-in-out 50ms both;
+  animation: filling 1s ease-in-out 50ms both;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .container-ah__icone:hover > .fa-heart {
+    -webkit-animation: filling 1s ease-in-out 50ms both;
+    animation: filling 1s ease-in-out 50ms both;
+    cursor: pointer;
   }
 }
 
@@ -507,7 +518,7 @@
   align-self: center;
   animation: 1s ease-in-out 4.9s both fadein;
 }
-.container-menu__icone:hover > .fa-heart {
+.container-menu__icone:active > .fa-heart {
   animation: filling-menu 1s ease-in-out 100ms forwards;
   cursor: pointer;
 }
@@ -519,6 +530,10 @@
 @media (min-width: 1024px) {
   .container-menu__heading {
     font-size: 1.8rem;
+  }
+  .container-menu__icone:hover > .fa-heart {
+    animation: filling-menu 1s ease-in-out 100ms forwards;
+    cursor: pointer;
   }
 }
 

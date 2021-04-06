@@ -33,22 +33,6 @@
     &__byline{
         margin-top: 5px;
     }
-
-    &__icone{
-        align-self: flex-end;
-        position: absolute;
-        bottom: 30px;
-        right: 16px;
-        font-size: 21px;
-        &:active, &:hover{
-            & > .fa-heart{
-            -webkit-animation: filling 1s ease-in-out 50ms both;
-            animation: filling 1s ease-in-out 50ms both;
-            cursor: pointer;
-            }  
-        }
-    
-    }
     @media screen and (min-width: map-get($breakpoints, min-mobile)) and (max-width: map-get($breakpoints, g-mobile)) {
         margin: 0 auto 15px;
         &__img{
@@ -63,5 +47,32 @@
     @media (min-width: map-get($breakpoints, desktop)){
         @include mediaqueries;
     }
+}
+.container-ah{
+    position: relative;
+    &__icone{
+        align-self: flex-end;
+        position: absolute;
+        bottom: 30px;
+        right: 35px;
+        font-size: 21px;
+        &:active{
+            & > .fa-heart{
+            -webkit-animation: filling 1s ease-in-out 50ms both;
+            animation: filling 1s ease-in-out 50ms both;
+            cursor: pointer;
+            }  
+        }
+        @media (min-width: map-get($breakpoints, desktop)){
+            &:hover{
+                & > .fa-heart{
+                -webkit-animation: filling 1s ease-in-out 50ms both;
+                animation: filling 1s ease-in-out 50ms both;
+                cursor: pointer;
+                }  
+            }
+            
+        }
     
+    }
 }
