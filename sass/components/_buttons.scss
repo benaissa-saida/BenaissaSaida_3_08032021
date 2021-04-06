@@ -1,8 +1,8 @@
 .button{
     @include btn;
     font-size: $size;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
     &:hover{
         opacity: 0.9;  
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
