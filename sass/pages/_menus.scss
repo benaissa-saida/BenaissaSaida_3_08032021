@@ -1,0 +1,246 @@
+.container-menu{
+    @include flexbox;
+    width: 100vw;
+    min-width: 320px;
+    @include font-roboto;
+    position: relative;
+    &__img{
+        width: 100vw;
+        min-width: 320px;
+        height: 60vh;
+        object-fit: cover;
+    }
+    &__card{
+        @include flexbox;
+        background: $colour-bloc;
+        margin-top: -4rem;
+        border-radius: 2rem 2rem 0 0; 
+    }
+    &__heading{
+        justify-content: space-around;
+        display: inline-flex;
+        font-size: 1.6rem;
+        align-items: center;
+        font-weight: 100;
+    }
+    &__button{
+        width: 150px;
+        align-self: center;
+        animation: 1s ease-in-out 4.9s both fadein;
+    }
+    &__icone{
+        &:hover{
+             & > .fa-heart{
+                animation: filling-menu 1s ease-in-out 100ms forwards;
+                cursor: pointer;
+            } 
+        }  
+    }
+
+    @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
+        &__heading{
+            font-size: 2rem;
+        }
+    }
+    @media (min-width: map-get($breakpoints, desktop)){
+        &__heading{
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.article{
+    z-index: 3;
+    &__heading{
+        font-weight: 100;
+        margin-left: 13px;
+        font-size: 1.17rem;
+        &--underline{
+            border-bottom: 3px solid $colour-tertiary;
+        }
+    }
+    &__starter{
+        animation: 1s ease-in 3.5s both fadein;
+    }
+    &__main-course{
+        animation: 1s ease-in-out 4s both fadein;
+    }
+    &__desserts{
+        animation: 1s ease-in-out 4.5s both fadein;
+    }
+    
+    &__dishes{
+        display: grid;
+        grid-template-columns: 1fr 10%;
+        grid-template-rows: repeat(2, 50%);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background: $colour-white;
+        cursor: pointer;
+        position: relative;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        & p{
+            margin: 0;
+        }
+        & h3{ 
+            font-size: 1.15rem;
+            margin: 0;
+        }
+
+        &--bottom{
+            grid-column-start: 1;
+            font-size: 15px;
+            padding-top: 5px;
+            font-weight: 100; 
+        }
+        &--ellipsis{
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            transition: all 0.5s linear; 
+            
+        }
+        &--slide-in{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 0 10px 10px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10%;
+            height: 64px;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+            & > p{
+                padding-top: 24px;
+            }
+            & .check{
+                background: $colour-tertiary;
+                transform: translateX(23px);
+                width: 70%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 64px;
+                & > .fa-check-circle{
+                    font-size: 23px;
+                    color: $colour-white;
+                }
+            } 
+        } 
+        &:active {
+            & .article__dishes{
+                &--slide-in{
+                    width: 35%;
+                }
+                &--ellipsis{ 
+                    width: 73%;
+                    text-overflow: ellipsis; 
+                }
+            }
+        }
+        &:active .check{
+            & > .fa-check-circle{
+                animation: spin 0.5s linear forwards;
+            }
+        }     
+        
+    }
+    @media screen and (max-width: 360px){
+        &__dishes{
+            & h3{
+               font-size: 1rem; 
+            }
+            & p{
+                font-size: 13px;
+            }
+        }
+        & .check{
+            transform: translateX(10px);
+            width: 100%;
+        }
+        &__dishes{
+           &:active{
+                & .article__dishes--slide-in{
+                    width: 35%;
+                } 
+            }
+           
+        }  
+    }
+    @media screen and (min-width: map-get($breakpoints, min-mobile)) and (max-width: map-get($breakpoints, g-mobile)) {
+        width: 95%;
+        align-self: center;
+        &__dishes--slide-in{
+            width: 40px; 
+        }
+
+        & .check{
+            transform: translateX(13px);
+            width: 90%;
+        }
+        &__dishes{
+           &:active{
+                & .article__dishes--slide-in{
+                    width: 35%;
+                } 
+            }
+           
+        }  
+    }
+    @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
+        width: 95%;
+        align-self: center;
+        &__dishes--slide-in{
+            width: 5%; 
+        }
+        & .check{
+            transform: translateX(40px);
+            width: 75%;
+        }
+        &__dishes{
+           &:active{
+                & .article__dishes--slide-in{
+                    width: 25%;
+                } 
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, desktop)){
+        width: 95%;
+        align-self: center;
+        &__dishes--slide-in{
+            width: 5%; 
+        }
+        & .check{
+            transform: translateX(63px);
+            width: 85%;
+        }
+        &__dishes{
+           &:hover{
+                & .article__dishes--slide-in{
+                    width: 20%;
+                } 
+                & .check{
+                    transform: translate(35px);
+                    & > .fa-check-circle{
+                        animation: spin 0.5s linear forwards;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+#heartfill{
+    display: none;
+    &:checked ~ * .container-menu__icone > .fa-heart, 
+    &:checked ~ * .card__icone > .fa-heart{
+        display: inline-block;
+        @include filling-anim;
+        transition: all 1s;
+    }
+}

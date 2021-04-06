@@ -1,0 +1,106 @@
+.present{
+    padding: $size;
+    @include flexbox;
+    align-items: center;
+    text-align: center;
+}
+
+.menu{
+    @include flexbox;
+    &__restaurants{
+    width: 100%;
+    }
+    &__heading{
+        margin-left: $size;
+    }
+    & a{
+        text-decoration: none;
+        color: darken($colour-white, 100%);
+    }
+    &__choice{
+        background: $colour-white;
+        order: -1;
+    }
+    &__list{
+        padding-left: 25px;
+    }
+    &__items{
+        list-style-type: none;
+        position: relative;
+        &--numbers{
+            display: inline-flex;
+            padding: 5px 9px;
+            margin-left: 1.4em;
+            background: $colour-primary;
+            border-radius: 2rem;
+            font-size: 13px;
+            color: $colour-white;
+            position: absolute;
+            bottom: 2.4rem;
+            left: -2.1rem;
+        }
+    }
+    @media screen and (min-width: map-get($breakpoints, min-mobile)) and (max-width: map-get($breakpoints, g-mobile)) {
+        &__heading{
+           margin-left: 2.1rem; 
+        }
+        &__list{
+            padding-left: 30px;
+        }
+         
+    }
+    
+    @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
+        flex-direction: row;
+        &__restaurants{
+            width: 70%;
+            background-color: $colour-white;
+            border-radius: 0 2% 2% 0;
+        }
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+        }
+        &__choice{
+            order: unset; 
+            width: 32%;
+            background: none;
+        }
+        &__items{
+            &--numbers{
+                margin-left: 0;
+                bottom: 1.6rem;
+                left: -1rem;
+            }
+        }
+    }
+    @media (min-width: map-get($breakpoints, desktop)){
+        flex-direction: row;
+        &__restaurants{
+            width: 70%;
+            background-color: $colour-white;
+            border-radius: 0 2% 2% 0;
+        }
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+        }
+        &__choice{
+            order: unset; 
+            width: 32%;
+            background: none;
+        }
+        &__items{
+            &--numbers{
+                margin-left: 0;
+                bottom: 1.6rem;
+                left: -1rem;
+            }
+        }
+    }
+
+}

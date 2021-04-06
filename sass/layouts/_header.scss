@@ -1,0 +1,42 @@
+.header{
+    @include flexbox;
+    text-align: center;
+    &__logo{
+        width: 100%;
+        padding: 13px 0;
+        background: $colour-white;
+    }
+    &__loc{
+        display: flex;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
+        @include background($colour-bloc);
+        &--city{
+            @include background($colour-bloc);
+            @include border;
+            font-size: $size;
+            margin-left: 1.1rem;
+            &:focus{
+                outline: none;
+                border: 2px solid $colour-primary;
+                border-radius: 3px;
+            } 
+        }
+    }        
+    & a{
+        font-size: 18px;
+        align-self: flex-start;
+        text-decoration: none;
+        color: darken($colour-white, 100%);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
+        & a{
+            font-size: 1.7rem;
+        }
+    }
+}

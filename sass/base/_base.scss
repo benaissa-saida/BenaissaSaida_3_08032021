@@ -1,0 +1,21 @@
+.body {
+    @include font-roboto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    
+    &__menu{
+        font-weight: 100;
+        margin:0;
+    }
+}
+
+.bloc-page{
+    @include flexbox;
+    width: 100vw;
+    // height: 100vh;
+    min-width: 320px;
+    z-index: 2;
+    
+}

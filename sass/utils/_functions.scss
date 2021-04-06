@@ -1,0 +1,15 @@
+@function dark($clr){
+    $hue: hue($clr);
+    $sat: 0%;
+    $light: 16%;
+    $dark: hsl($hue, $sat, $light);
+    @return $dark;
+}
+
+@function pastel($clr){
+    $hue: hue($clr);
+    $sat: 100%;
+    $light: 95%;
+    $pastel: hsl($hue, $sat, $light);
+    @return $pastel;
+}

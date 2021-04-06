@@ -1,0 +1,25 @@
+.footer{
+    background-color: dark($colour-white);
+    color: $colour-white;
+    padding-left: 20px;
+    font-weight: 500;
+    &__byline{
+        margin-top: 0;
+        margin-bottom: 5px;
+    }  
+    &__icone{
+        margin-right: 10px;
+        font-size: $size;
+        &--space{
+        margin-right: 15px;
+        }
+    }   
+    &__contact {
+        margin-bottom: 20px;
+        font-style: normal;
+        & a{
+            text-decoration: none;
+            color: $colour-white;
+        }
+    }
+}

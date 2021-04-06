@@ -1,0 +1,64 @@
+.button{
+    @include btn;
+    font-size: $size;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        opacity: 0.9;  
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+
+.btn{
+    margin: 10px 0;
+    width: 90vw;
+    min-width: 300px;
+    padding: 30px 4rem 30px 0;
+    @include border;
+    font-size: $size;
+    border-radius: 25px;
+    background: $colour-bloc;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    i{
+        padding-right: 25px;
+        font-size: 1.5rem;
+        color: darken($colour-white, 45%);
+    }
+    &:hover{
+        background-color: pastel($colour-primary);
+        &:hover i{
+            color: $colour-primary;
+        }
+    }
+    @media screen and (max-width: 360px){
+        min-width: 290px;
+        padding-left: 1rem;
+    }
+    @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
+        width: 96%;
+        min-width: unset;
+        padding: 0.9rem;
+        font-size: 0.8rem;
+        background: lighten($colour-bloc, 3%);
+        & i{
+            padding-right: 22px;
+            font-size: 1.4rem;
+        }
+    }
+    @media (min-width: map-get($breakpoints, desktop)){
+        width: 96%;
+        min-width: unset;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        padding: 0.9rem;
+        font-size: 1rem;
+        background: lighten($colour-bloc, 3%);
+        & i{
+            font-size: 1.7rem;
+        }
+    }
+}

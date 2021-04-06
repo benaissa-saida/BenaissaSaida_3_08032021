@@ -1,0 +1,14 @@
+$colour-primary: #9356DC;
+$colour-secondary: #FF79DA;
+$colour-tertiary: #99E2D0;
+$colour-white: #FFF;
+$colour-bloc: #F4F4F4;
+$size: 15px;
+$box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+$breakpoints: (
+    min-mobile: 480px,
+    g-mobile: 780px,
+    min-tab: 781px,
+    tablette: 1023px,
+    desktop: 1024px
+);

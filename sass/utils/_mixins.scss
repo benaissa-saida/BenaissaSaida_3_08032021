@@ -1,0 +1,54 @@
+@mixin background($colour) {
+    @if ( lightness($colour) < 96% ){
+        $colour: darken($colour, 10%);
+    }
+    background: $colour;
+}
+
+@mixin border{
+    border: none;
+}
+
+@mixin btn {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: $colour-white;
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+    @include border;
+    background-size: 200%;
+    background-image: linear-gradient(
+        $colour-secondary, 
+        $colour-primary 
+    );
+}
+
+@mixin font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin flexbox{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin filling-anim{
+    font-weight: 900;
+    background: linear-gradient( 0deg, $colour-primary, $colour-secondary);;
+    background: -webkit-linear-gradient( 0deg, $colour-primary, $colour-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+@mixin mediaqueries {
+    width: 94%;
+    min-width: unset;
+    margin: 0 5px 10px 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    background: none;
+    &__img{
+        width: 100%
+    }
+}

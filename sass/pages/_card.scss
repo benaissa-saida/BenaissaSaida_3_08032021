@@ -1,0 +1,67 @@
+.card{
+    width: 90vw;
+    min-width: 300px;
+    margin: 0 20px 15px 15px;
+    @include flexbox;
+    background: white;
+    border-radius: 1rem;
+    position: relative;
+    &__new{
+        background: $colour-tertiary;
+        color: darken($colour-tertiary, 40%);
+        padding: 8px 15px;
+        border-radius: 2px;
+        position: absolute;
+        top: $size;
+        right: $size;
+    }
+    &__img{
+        height: 180px;
+        object-fit: cover;
+        object-position: bottom;
+        border-radius: 1rem 1rem 0 0;
+        &--center{
+            object-position: center;
+        }
+    }
+    &__caption{
+        padding-left: $size;
+    } 
+    &__heading{
+        margin-bottom: 0;
+        }
+    &__byline{
+        margin-top: 5px;
+    }
+
+    &__icone{
+        align-self: flex-end;
+        position: absolute;
+        bottom: 30px;
+        right: 16px;
+        font-size: 21px;
+        &:active, &:hover{
+            & > .fa-heart{
+            -webkit-animation: filling 1s ease-in-out 50ms both;
+            animation: filling 1s ease-in-out 50ms both;
+            cursor: pointer;
+            }  
+        }
+    
+    }
+    @media screen and (min-width: map-get($breakpoints, min-mobile)) and (max-width: map-get($breakpoints, g-mobile)) {
+        margin: 0 auto 15px;
+        &__img{
+            height: 200px;
+            object-position: center;
+        }
+    }
+    
+    @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
+        @include mediaqueries;
+    }
+    @media (min-width: map-get($breakpoints, desktop)){
+        @include mediaqueries;
+    }
+    
+}

@@ -1,0 +1,19 @@
+/* UTILS: variables, mixins, function */
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+/* BASE: font, typologie, box-sizing */
+@import "./base/base";
+@import "./base/typography";
+@import "./base/animations";
+/* COMPONENTS: buttons */
+@import "./components/buttons";
+/* LAYOUT: container, form, nav, header, footer*/
+@import "./layouts/container";
+@import "./layouts/header";
+@import "./layouts/footer";
+/*PAGES*/
+@import "./pages/loader";
+@import "./pages/index";
+@import "./pages/card";
+@import "./pages/menus";
