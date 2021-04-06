@@ -552,8 +552,6 @@
   background: #FFF;
   cursor: pointer;
   position: relative;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .article__dishes p {
   margin: 0;
@@ -604,10 +602,10 @@
   color: #FFF;
 }
 .article__dishes:active .article__dishes--slide-in {
-  width: 35%;
+  width: 38%;
 }
 .article__dishes:active .article__dishes--ellipsis {
-  width: 73%;
+  width: 65%;
   text-overflow: ellipsis;
 }
 .article__dishes:active .check > .fa-check-circle {
@@ -624,11 +622,15 @@
     height: 60px;
   }
   .article .check {
-    transform: translateX(10px);
+    transform: translateX(12px);
     width: 100%;
   }
   .article__dishes:active .article__dishes--slide-in {
     width: 35%;
+  }
+  .article__dishes:active .article__dishes--ellipsis {
+    width: 70%;
+    text-overflow: ellipsis;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 780px) {

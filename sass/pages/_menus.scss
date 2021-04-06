@@ -79,8 +79,6 @@
         background: $colour-white;
         cursor: pointer;
         position: relative;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         & p{
             margin: 0;
         }
@@ -134,10 +132,10 @@
         &:active {
             & .article__dishes{
                 &--slide-in{
-                    width: 35%;
+                    width: 38%;
                 }
                 &--ellipsis{ 
-                    width: 73%;
+                    width: 65%;
                     text-overflow: ellipsis; 
                 }
             }
@@ -162,14 +160,20 @@
             }
         }
         & .check{
-            transform: translateX(10px);
+            transform: translateX(12px);
             width: 100%;
         }
         &__dishes{
            &:active{
-                & .article__dishes--slide-in{
-                    width: 35%;
-                } 
+                & .article__dishes{
+                    &--slide-in{
+                        width: 35%;
+                    } 
+                    &--ellipsis{ 
+                        width: 70%;
+                        text-overflow: ellipsis; 
+                    }
+                }
             }
            
         }  
