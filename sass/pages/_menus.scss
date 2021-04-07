@@ -26,7 +26,7 @@
     &__button{
         width: 150px;
         align-self: center;
-        animation: 1s ease-in-out 4.9s both fadein;
+        animation: 1s ease-in-out 2.9s both fadein;
     }
     &__icone{
         &:active{
@@ -36,10 +36,26 @@
             } 
         }  
     }
+    @media (min-width: map-get($breakpoints, min-mobile)) and (max-width: map-get($breakpoints, g-mobile)){
+        &__article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            width: 100vw;
+        }
+    }
 
     @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
         &__heading{
-            font-size: 2rem;
+            font-size: 1.6rem;
+        }
+        &__article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            width: 100vw;
         }
     }
     @media (min-width: map-get($breakpoints, desktop)){
@@ -53,6 +69,9 @@
                     cursor: pointer;
                 } 
             }  
+        }
+        &__article{
+            display: flex;
         }
     }
 }
@@ -68,18 +87,18 @@
         }
     }
     &__starter{
-        animation: 1s ease-in 3.5s both fadein;
+        animation: 1s ease-in 1.5s both fadein;
     }
     &__main-course{
-        animation: 1s ease-in-out 4s both fadein;
+        animation: 1s ease-in-out 2s both fadein;
     }
     &__desserts{
-        animation: 1s ease-in-out 4.5s both fadein;
+        animation: 1s ease-in-out 2.5s both fadein;
     }
     
     &__dishes{
         display: grid;
-        grid-template-columns: 1fr 10%;
+        grid-template-columns: 1fr 9%;
         grid-template-rows: repeat(2, 50%);
         margin: 10px;
         padding: 10px;
@@ -97,7 +116,7 @@
 
         &--bottom{
             grid-column-start: 1;
-            font-size: 15px;
+            font-size: 14px;
             padding-top: 5px;
             font-weight: 100; 
         }
@@ -117,7 +136,7 @@
             top: 0;
             right: 0;
             width: 10%;
-            height: 64px;
+            height: 100%;
             overflow: hidden;
             transition: 0.5s ease-in-out;
             & > p{
@@ -155,39 +174,8 @@
         }     
         
     }
-    @media screen and (max-width: 360px){
-        &__dishes{
-            & h3{
-               font-size: 1rem; 
-            }
-            & p{
-                font-size: 13px;
-            }
-            &--slide-in{
-                height: 60px;
-            }
-        }
-        & .check{
-            transform: translateX(12px);
-            width: 100%;
-        }
-        &__dishes{
-           &:active{
-                & .article__dishes{
-                    &--slide-in{
-                        width: 35%;
-                    } 
-                    &--ellipsis{ 
-                        width: 70%;
-                        text-overflow: ellipsis; 
-                    }
-                }
-            }
-           
-        }  
-    }
     @media screen and (min-width: map-get($breakpoints, min-mobile)) and (max-width: map-get($breakpoints, g-mobile)) {
-        width: 95%;
+        width: 85%;
         align-self: center;
         &__dishes--slide-in{
             width: 40px; 
@@ -207,13 +195,13 @@
         }  
     }
     @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
-        width: 95%;
+        width: 85%;
         align-self: center;
         &__dishes--slide-in{
-            width: 5%; 
+            width: 6%; 
         }
         & .check{
-            transform: translateX(40px);
+            transform: translateX(29px);
             width: 75%;
         }
         &__dishes{
@@ -228,19 +216,25 @@
         width: 95%;
         align-self: center;
         &__dishes--slide-in{
-            width: 5%; 
+            width: 9%; 
         }
         & .check{
-            transform: translateX(63px);
-            width: 85%;
+            transform: translateX(40px);
+            width: 75%;
         }
         &__dishes{
            &:hover{
-                & .article__dishes--slide-in{
-                    width: 20%;
-                } 
+                & .article__dishes{
+                    &--slide-in{
+                        width: 30%;
+                    }
+                    &--ellipsis{
+                        width: 75%;
+                        text-overflow: ellipsis; 
+                    }  
+                }
                 & .check{
-                    transform: translate(35px);
+                    transform: translateX(10px);
                     & > .fa-check-circle{
                         animation: spin 0.5s linear forwards;
                     }

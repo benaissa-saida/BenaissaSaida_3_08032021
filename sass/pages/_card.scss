@@ -58,7 +58,7 @@
     &__icone{
         position: absolute;
         bottom: 30px;
-        right: 35px;
+        right: 3rem;
         font-size: 21px;
         &:active{
             & > .fa-heart{
@@ -67,7 +67,18 @@
             cursor: pointer;
             }  
         }
+        @media screen and (min-width: map-get($breakpoints, min-mobile)) and (max-width: map-get($breakpoints, g-mobile)) {
+            position: absolute;
+            right: 4rem;
+        }
+        @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
+            position: absolute;
+            bottom: 40px;
+            right: 2rem;
+        }
         @media (min-width: map-get($breakpoints, desktop)){
+            position: absolute;
+            bottom: 40px;
             &:hover{
                 & > .fa-heart{
                 -webkit-animation: filling 1s ease-in-out 50ms both;
@@ -75,27 +86,7 @@
                 cursor: pointer;
                 }  
             }
-            
-        }
-        @media screen and (min-width: map-get($breakpoints, min-mobile)) and (max-width: map-get($breakpoints, g-mobile)) {
-            position: absolute;
-            bottom: 30px;
-            right: 4rem;
-            font-size: 25px;
-        }
-        @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
-            position: absolute;
-            bottom: 40px;
-            right: 2rem;
-            font-size: 25px;
-        }
-        @media (min-width: map-get($breakpoints, desktop)){
-            position: absolute;
-            bottom: 40px;
-            right: 3rem;
-            font-size: 25px;
         }
         
-    
     }
 }
