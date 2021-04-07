@@ -457,6 +457,9 @@
   .card__img {
     width: 100%;
   }
+  .card__img--tcenter {
+    object-position: center;
+  }
 }
 
 .container-ah {
@@ -478,6 +481,30 @@
     -webkit-animation: filling 1s ease-in-out 50ms both;
     animation: filling 1s ease-in-out 50ms both;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 780px) {
+  .container-ah__icone {
+    position: absolute;
+    bottom: 30px;
+    right: 4rem;
+    font-size: 25px;
+  }
+}
+@media (min-width: 781px) and (max-width: 1023px) {
+  .container-ah__icone {
+    position: absolute;
+    bottom: 40px;
+    right: 2rem;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .container-ah__icone {
+    position: absolute;
+    bottom: 40px;
+    right: 3rem;
+    font-size: 25px;
   }
 }
 

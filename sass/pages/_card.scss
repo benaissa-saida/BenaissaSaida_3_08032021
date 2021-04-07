@@ -46,6 +46,11 @@
     }
     @media (min-width: map-get($breakpoints, desktop)){
         @include mediaqueries;
+        &__img{
+            &--tcenter{
+                object-position: center;
+            }
+        }
     }
 }
 .container-ah{
@@ -72,6 +77,25 @@
             }
             
         }
+        @media screen and (min-width: map-get($breakpoints, min-mobile)) and (max-width: map-get($breakpoints, g-mobile)) {
+            position: absolute;
+            bottom: 30px;
+            right: 4rem;
+            font-size: 25px;
+        }
+        @media (min-width: map-get($breakpoints, min-tab)) and (max-width: map-get($breakpoints, tablette)){
+            position: absolute;
+            bottom: 40px;
+            right: 2rem;
+            font-size: 25px;
+        }
+        @media (min-width: map-get($breakpoints, desktop)){
+            position: absolute;
+            bottom: 40px;
+            right: 3rem;
+            font-size: 25px;
+        }
+        
     
     }
 }
