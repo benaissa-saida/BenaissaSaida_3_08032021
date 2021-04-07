@@ -17,7 +17,6 @@
   flex-direction: column;
   width: 100vw;
   min-width: 320px;
-  z-index: 2;
 }
 
 .footer__heading, h1 {
@@ -123,7 +122,6 @@
   background-size: 200%;
   background-image: linear-gradient(#FF79DA, #9356DC);
   font-size: 15px;
-  -webkit-transition: box-shadow 0.5s ease-in-out;
   transition: box-shadow 0.5s ease-in-out;
 }
 .button:hover {
@@ -225,7 +223,6 @@
 }
 .header a {
   font-size: 18px;
-  align-self: flex-start;
   text-decoration: none;
   color: black;
   position: absolute;
@@ -466,7 +463,6 @@
   position: relative;
 }
 .container-ah__icone {
-  align-self: flex-end;
   position: absolute;
   bottom: 30px;
   right: 35px;
@@ -496,7 +492,7 @@
 .container-menu__img {
   width: 100vw;
   min-width: 320px;
-  height: 60vh;
+  height: 50vh;
   object-fit: cover;
 }
 .container-menu__card {
