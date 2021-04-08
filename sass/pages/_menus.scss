@@ -220,7 +220,7 @@
         }
         & .check{
             transform: translateX(40px);
-            width: 75%;
+            width: 85%;
         }
         &__dishes{
            &:hover{
@@ -229,7 +229,7 @@
                         width: 30%;
                     }
                     &--ellipsis{
-                        width: 75%;
+                        width: 65%;
                         text-overflow: ellipsis; 
                     }  
                 }

@@ -133,6 +133,7 @@
   margin: 10px 0;
   width: 90vw;
   min-width: 290px;
+  max-width: 800px;
   padding: 30px 4rem 30px 1rem;
   border: none;
   font-size: 15px;
@@ -415,6 +416,7 @@
   .card {
     width: 95%;
     min-width: 200px;
+    max-width: 800px;
     margin: 0 5px 10px 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     background: none;
@@ -427,6 +429,7 @@
   .card {
     width: 95%;
     min-width: 200px;
+    max-width: 800px;
     margin: 0 5px 10px 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     background: none;
@@ -595,8 +598,9 @@
 }
 .article__dishes--ellipsis {
   width: 100%;
+  overflow: hidden;
   white-space: nowrap;
-  transition: width 0.5s linear;
+  transition: all 0.5s linear;
 }
 .article__dishes--slide-in {
   display: flex;
@@ -679,13 +683,13 @@
   }
   .article .check {
     transform: translateX(40px);
-    width: 75%;
+    width: 85%;
   }
   .article__dishes:hover .article__dishes--slide-in {
     width: 30%;
   }
   .article__dishes:hover .article__dishes--ellipsis {
-    width: 75%;
+    width: 65%;
     text-overflow: ellipsis;
   }
   .article__dishes:hover .check {
