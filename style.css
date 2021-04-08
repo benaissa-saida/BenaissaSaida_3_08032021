@@ -685,6 +685,9 @@
     transform: translateX(40px);
     width: 85%;
   }
+  .article__dishes {
+    grid-template-columns: 1fr 5%;
+  }
   .article__dishes:hover .article__dishes--slide-in {
     width: 30%;
   }
