@@ -595,9 +595,8 @@
 }
 .article__dishes--ellipsis {
   width: 100%;
-  overflow: hidden;
   white-space: nowrap;
-  transition: all 0.5s linear;
+  transition: width 0.5s linear;
 }
 .article__dishes--slide-in {
   display: flex;
