@@ -689,7 +689,7 @@
     width: 30%;
   }
   .article__dishes:hover .article__dishes--ellipsis {
-    width: 65%;
+    width: 70%;
     text-overflow: ellipsis;
   }
   .article__dishes:hover .check {
