@@ -43,12 +43,11 @@
     color: transparent;
 }
 @mixin mediaqueries {
-    width: 95%;
+    width: 45vw;
     min-width: 200px;
     max-width: 800px;
     margin: 0 5px 10px 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    background: none;
     &__img{
         width: 100%
     }

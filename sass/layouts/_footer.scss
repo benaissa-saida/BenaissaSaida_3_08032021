@@ -1,4 +1,4 @@
-.footer{
+.footer{ 
     background-color: dark($colour-white);
     color: $colour-white;
     padding-left: 20px;
@@ -7,10 +7,10 @@
         margin-top: 0;
         margin-bottom: 5px;
     }  
-    &__icone{
+    &__icone{ 
         margin-right: 10px;
         font-size: $size;
-        &--space{
+        &--space{ 
         margin-right: 15px;
         }
     }   

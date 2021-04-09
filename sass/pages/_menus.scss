@@ -29,7 +29,7 @@
         animation: 1s ease-in-out 2.9s both fadein;
     }
     &__icone{
-        &:active{
+        &:hover{
              & > .fa-heart{
                 animation: filling-menu 1s ease-in-out 100ms forwards;
                 cursor: pointer;
@@ -61,14 +61,6 @@
     @media (min-width: map-get($breakpoints, desktop)){
         &__heading{
             font-size: 1.8rem;
-        }
-        &__icone{
-            &:hover{
-                 & > .fa-heart{
-                    animation: filling-menu 1s ease-in-out 100ms forwards;
-                    cursor: pointer;
-                } 
-            }  
         }
         &__article{
             display: flex;
@@ -156,7 +148,7 @@
                 }
             } 
         } 
-        &:active {
+        &:hover {
             & .article__dishes{
                 &--slide-in{
                     width: 38%;
@@ -167,7 +159,7 @@
                 }
             }
         }
-        &:active .check{
+        &:hover .check{
             & > .fa-check-circle{
                 animation: spin 0.5s linear forwards;
             }
@@ -186,7 +178,7 @@
             width: 90%;
         }
         &__dishes{
-           &:active{
+           &:hover {
                 & .article__dishes--slide-in{
                     width: 35%;
                 } 
@@ -205,7 +197,7 @@
             width: 75%;
         }
         &__dishes{
-           &:active{
+           &:hover {
                 & .article__dishes--slide-in{
                     width: 25%;
                 } 

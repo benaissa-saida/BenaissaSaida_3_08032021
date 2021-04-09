@@ -47,20 +47,20 @@
     @media (min-width: map-get($breakpoints, desktop)){
         @include mediaqueries;
         &__img{
-            &--tcenter{
-                object-position: center;
-            }
+            object-position: center;
         }
     }
 }
 .container-ah{
     position: relative;
+    max-width: 800px;
+    margin: 0 auto;
     &__icone{
         position: absolute;
         bottom: 30px;
         right: 3rem;
         font-size: 21px;
-        &:active{
+        &:hover{
             & > .fa-heart{
             -webkit-animation: filling 1s ease-in-out 50ms both;
             animation: filling 1s ease-in-out 50ms both;
@@ -79,13 +79,6 @@
         @media (min-width: map-get($breakpoints, desktop)){
             position: absolute;
             bottom: 40px;
-            &:hover{
-                & > .fa-heart{
-                -webkit-animation: filling 1s ease-in-out 50ms both;
-                animation: filling 1s ease-in-out 50ms both;
-                cursor: pointer;
-                }  
-            }
         }
         
     }
