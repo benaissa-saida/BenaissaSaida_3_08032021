@@ -254,13 +254,15 @@
   height: 100%;
   position: absolute;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   animation: load 3s cubic-bezier(0.42, 0.36, 0.34, 0.62) forwards;
 }
 .loading__spinner {
   height: 7rem;
   width: 7rem;
+  position: fixed;
+  top: 20rem;
   display: inline-block;
   border: 4px solid #bc95e9;
   border-radius: 50%;
